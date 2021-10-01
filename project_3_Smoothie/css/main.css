@@ -1,0 +1,495 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  color: #9a9a9a;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+@media (max-width: 700px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.arrow-back {
+  position: absolute;
+  top: 9px;
+  left: 12px;
+  width: 30px;
+}
+.none {
+  display: none !important;
+}
+
+.logo {
+  cursor: default;
+}
+@media (max-width: 700px) {
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 5px;
+  }
+}
+@media (max-width: 616px) {
+  .logo {
+    display: none;
+  }
+}
+
+header.top-header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100px;
+}
+
+.nav-style ul {
+  display: flex;
+  font-size: 18px;
+  line-height: 22px;
+  color: #433840;
+}
+@media (max-width: 700px) {
+  .nav-style ul {
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+  }
+}
+@media (max-width: 616px) {
+  .nav-style ul {
+    padding-left: 0;
+  }
+}
+
+.nav-style ul li {
+  margin-left: 16px;
+  margin-right: 16px;
+  list-style-type: none;
+}
+
+.nav-style ul li a.active {
+  color: #fea3ac;
+}
+
+.nav-style ul li a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-style ul li:hover {
+  color: #fea3ac;
+  transition: all 0.2s ease-in-out;
+}
+
+.svg-style {
+  position: relative;
+}
+
+.page_heading {
+  min-height: 400px;
+  background-size: cover;
+  margin-right: 48px;
+  margin-left: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about_page {
+  background: transparent url("../img/apricot.jpg") center center no-repeat;
+}
+
+.svg-style::before {
+  content: "";
+  width: 100%;
+  height: 130px;
+  background: url("../img/top.svg") center center no-repeat;
+  position: absolute;
+  top: -1px;
+  left: 0;
+}
+
+.svg-style::after {
+  content: "";
+  width: 100%;
+  height: 110px;
+  background: url("../img/bottom.svg") center center no-repeat;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.page_heading h2 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 62px;
+  color: #ffffff;
+}
+
+.page_heading span.subtitle {
+  font-family: "Waiting for the Sunrise", cursive;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 50px;
+  color: #ffffff;
+}
+
+.about_box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.about_box .item-data:first-child {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.about_box .item-data:last-child {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+@media (max-width: 800px) {
+  .about_box .item-data:first-child,
+  .about_box .item-data:last-child {
+    text-align: center;
+    width: 400px;
+  }
+}
+@media (max-width: 700px) {
+  .about_box .item-data:first-child,
+  .about_box .item-data:last-child {
+    text-align: left;
+    width: auto;
+  }
+}
+
+.about_box .item-data article {
+  margin-bottom: 80px;
+}
+@media (max-width: 700px) {
+  .about_box .item-data article {
+    margin-bottom: 20px;
+  }
+}
+
+.item-data article:last-child {
+  margin-bottom: 0;
+}
+
+.item-data article h3 {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 12px;
+  color: #433840;
+}
+
+.item-data article p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #9a9a9a;
+}
+
+.item-data_img {
+  padding-top: 25px;
+}
+@media (max-width: 800px) {
+  .item-data_img {
+    display: none;
+  }
+}
+
+.infographic {
+  background: #fea3ac;
+  max-width: 1178px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.info-list {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 700px) {
+  .info-list {
+    min-height: 1400px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.item-info {
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .item-info {
+    margin: 10px;
+  }
+}
+
+.icon {
+  width: 135px;
+  height: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.count {
+  font-family: "Waiting for the Sunrise", cursive;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 99px;
+  color: #dfeeb6;
+  display: block;
+}
+
+.item-info h4 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.box-title {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 60px;
+  color: #433840;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: "Waiting for the Sunrise", cursive;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 40px;
+  color: #f7a1a8;
+  display: block;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+@media (max-width: 1227px) {
+  .team-list {
+    margin: 0 30px;
+  }
+}
+@media (max-width: 1030px) {
+  .team-list {
+    justify-content: center;
+  }
+}
+
+.team-member {
+  width: calc(50% - 201px);
+  background: #c9e3f4;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  margin-left: 190px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1030px) {
+  .team-member {
+    margin: 0 5px 30px 5px;
+    min-width: 290px;
+  }
+}
+
+.image img {
+  border-radius: 100%;
+  margin-left: -190px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+@media (max-width: 1030px) {
+  .image img {
+    display: none;
+  }
+}
+
+.data {
+  margin-left: 17px;
+}
+@media (max-width: 1030px) {
+  .data {
+    padding: 50px;
+    margin: 0 0 30px 0;
+  }
+}
+@media (max-width: 329px) {
+  .data {
+    padding: 20px;
+    margin: 0 0 30px 0;
+  }
+}
+
+.name {
+  display: block;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #ffffff;
+}
+
+.position {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  color: #433840;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.data p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 12px;
+  color: #433840;
+}
+
+.socials {
+  letter-spacing: 10px;
+}
+
+.team-member:nth-child(2),
+.team-member:nth-child(3) {
+  background: #dfeeb6;
+}
+
+.team-member:nth-child(3),
+.team-member:nth-child(4) {
+  margin-left: 0;
+  margin-right: 190px;
+}
+@media (max-width: 1030px) {
+  .team-member:nth-child(3),
+  .team-member:nth-child(4) {
+    margin: 0 5px 30px 5px;
+  }
+}
+
+.team-member:nth-child(3) .image,
+.team-member:nth-child(4) .image {
+  order: 2;
+}
+
+.team-member:nth-child(3) .image img,
+.team-member:nth-child(4) .image img {
+  margin-left: 0;
+  margin-right: -190px;
+}
+
+.team-member:nth-child(3) .data,
+.team-member:nth-child(4) .data {
+  order: 1;
+  margin-left: 0;
+  margin-right: 17px;
+  text-align: right;
+}
+@media (max-width: 1030px) {
+  .team-member:nth-child(3) .data,
+  .team-member:nth-child(4) .data {
+    text-align: left;
+    margin: 0;
+  }
+}
+
+.footer {
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: #433840;
+  background-image: linear-gradient(to top, #32292f, #696167);
+  color: #ffffff;
+  padding: 30px 0;
+}
+@media (max-width: 700px) {
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer-hours p {
+  font-size: 16px;
+  line-height: 35px;
+}
+@media (max-width: 700px) {
+  .footer-hours p {
+    padding-bottom: 20px;
+  }
+}
+
+.footer-hours span {
+  color: #dfeeb6;
+}
+
+.footer-col {
+  max-width: 350px;
+  flex-grow: 1;
+}
+
+.hours {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  padding-bottom: 16px;
+}
+
+.icons {
+  letter-spacing: 10px;
+}
+
+.contacts {
+  padding-bottom: 16px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+}
+@media (max-width: 700px) {
+  .contacts {
+    padding-top: 20px;
+  }
+}
+
+.footer-contacts p {
+  font-size: 16px;
+  line-height: 35px;
+}
