@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КиноМикс</title>
+    <meta name="description" content="КиноМикс - это портал о кино">
+    <meta name="keywords" content="фильмы, фильмы онлайн, hd">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                <div class="logo_text">
+                    <h1><a href="index.html">КиноМикс</a></h1>
+                    <h2>Кино - наша страсть!</h2>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu-block">
+                    <a href="#" class="menu-btn">
+                        <span></span>
+                    </a>
+                    <nav class="menu-list menu-nav">
+                        <a class="menu-link" href="index.html">Главная</a>
+                        <a class="menu-link selected" href="films.html">Фильмы</a>
+                        <a class="menu-link" href="serials.html">Сериалы</a>
+                        <a class="menu-link" href="rating.html">Рейтинг фильмов</a>
+                        <a class="menu-link" href="contacts.html">Контакты</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="site_content">
+            <div class="sidebar_container">
+                <div class="sidebar">
+                    <h2>Поиск</h2>
+                    <form method="post" action="#" id="search_form">
+                        <input type="search" name="search_field" placeholder="Ваш запрос">
+                        <input type="submit" class="btn" value="Найти">
+                    </form>
+                </div>
+
+                <div class="sidebar">
+                    <h2>Вход</h2>
+                    <form method="post" action="#" id="login">
+                        <input type="text" name="login_field" placeholder="Логин">
+                        <input type="password" name="password_field" placeholder="Пароль">
+                        <input type="submit" class="btn" value="Войти">
+                        <div class="lables_passreg_text">
+                            <span><a href="#">Забыли пароль?</a></span> | <span><a href="#">Регистрация</a></span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="sidebar">
+                    <h2>Новости</h2>
+                    <span>07.07.2020</span>
+                    <p>Мы запустили расширенный поиск</p>
+                    <a href="#">читать</a>
+                </div>
+                <div class="sidebar">
+                    <h2>Рейтинг фильмов</h2>
+                    <ul>
+                        <li><a href="family.html">Семейка Бигфутов</a><span class="rating_sidebar">8.1</span></li>
+                        <li><a href="greenland.html">Гренландия</a><span class="rating_sidebar">9.1</span></li>
+                        <li><a href="under.html">Под водой</a><span class="rating_sidebar">9.9</span></li>
+                        <li><a href="invisible.html">Человек-невидимка</a><span class="rating_sidebar">8.0</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="info_film">
+                    <a href="family.html"><img src="./img/family.jpg" alt="Семейка Бигфутов"></a>
+                    <p>Все семьи разные, но эта – самая разношерстная. Папа когда-то превратился в Бигфута, сын унаследовал его суперспособности и умение понимать язык животных. Когда же уникальному заповеднику на Аляске понадобится помощь...</p>
+                    <div class="button"><a href="family.html">Смотреть</a></div>
+                </div>
+                <div class="info_film">
+                    <a href="greenland.html"><img src="./img/greenland.jpg" alt="Гренландия"></a>
+                    <p>Во всех СМИ твердят о приближающейся к Земле комете. Джон внезапно получает президентское сообщение, что он и его семья выбраны для спасения в секретном бункере...</p>
+                    <div class="button"><a href="greenland.html">Смотреть</a></div>
+                </div>
+                <div class="info_film">
+                    <a href="under.html"><img src="./img/under.jpg" alt="Под водой"></a>
+                    <p>Группа сотрудников большого подводного бурильного комплекса, располагающегося на дне Марианской впадины на глубине 11 км, переживает внезапное разрушение станции и сталкивается с неведомым океанским ужасом.</p>
+                    <div class="button"><a href="under.html">Смотреть</a></div>
+                </div>
+                <div class="info_film">
+                    <a href="invisible.html"><img src="./img/invisible.jpg" alt="Человек-невидимка"></a>
+                    <p>Под покровом ночи Сесилия бежит из высокотехнологичного дома своего бойфренда Адриана. Теперь девушка живёт у друга, боится выходить на улицу и страдает от мании преследования, когда узнает, что её бывший мучитель покончил с собой...</p>
+                    <div class="button"><a href="invisible.html">Смотреть</a></div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="footer">
+            <p>
+                <a href="index.html">Главная</a> 
+                <a href="films.html">Фильмы</a> 
+                <a href="serials.html">Сериалы</a> 
+                <a href="rating.html">Рейтинг фильмов</a> 
+                <a href="contacts.html">Контакты</a>
+            </p>
+        </div>
+
+    </div>
+    <script src="../libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
