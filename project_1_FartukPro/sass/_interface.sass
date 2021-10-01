@@ -1,0 +1,105 @@
+body
+    +light
+    color: $text-color
+.section
+    padding: 100px 0
+    &-title
+        margin-left: 41px
+        font-size: 30px
+        +bold 
+        text-align: center
+        text-transform: uppercase
+    &_title
+        margin-bottom: 100px
+.button-o
+    border: 2px solid $primary
+    padding: 17px 22px
+    background-color: #fff
+    color: $primary
+    text-transform: uppercase
+    text-decoration: none
+    +bold
+    &:hover
+        background-color: $primary
+        color: #fff
+.button
+    border: none
+    text-transform: uppercase
+    padding: 25px 45px
+    background-color: $primary
+    color: #fff
+    text-decoration: none
+    +bold
+    &:hover
+        cursor: pointer
+.bg-secondary
+    background: $bg-secondary
+.input
+    height: 80px
+    padding-left: 30px
+    border: 1px solid #dddddd
+input[type="checkbox"]
+    display: none
+    &:checked + label:before
+        background-color: $primary
+.select
+    height: 80px
+    width: 100%
+    border: 1px solid #dddddd
+    position: relative
+    &:after
+        content: ''
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 20px
+        width: 20px
+        height: 20px
+        background: url("../img/form/arrow-down.png") no-repeat center
+    &:hover
+        cursor: pointer
+    &_checked
+        line-height: 80px
+        padding-left: 30px
+    &_dropdown
+        position: absolute
+        display: none
+        top: 80px
+        width: 100%
+        background-color: #fff
+        border: 1px solid #dddddd
+        margin: 0
+        list-style-type: none
+        padding: 0
+        &-open
+            display: block
+    &_option
+        padding: 20px
+        &:hover
+            background-color: $bg-secondary
+.checkbox
+    &-label
+        display: flex
+        align-items: center
+        margin-right: 42px
+        &:hover
+            cursor: pointer
+        &:before
+            content: ''
+            height: 30px
+            width: 30px
+            border: 1px solid #dddddd
+            margin-right: 20px
+@media (max-width: 768px)
+    .section
+        &-title
+            margin-left: 0
+@media (max-width: 576px)
+    .button
+        font-size: 10px
+        &-o
+            font-size: 10px
+    .section
+        padding: 60px 0
+        &-title
+            font-size: 24px

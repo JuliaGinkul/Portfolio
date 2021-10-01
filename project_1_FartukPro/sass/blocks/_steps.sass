@@ -1,0 +1,49 @@
+.step
+    position: relative
+    text-align: center
+    &_title
+        font-size: 18px
+    &:last-child
+        &:before
+            display: none
+    &:before
+        content: ''
+        width: 100%
+        height: 2px
+        background-color: rgba(#7e7b78, 0.8)
+        display: block
+        position: absolute
+        top: 27%
+        right: -63%
+    &_text
+        max-width: 160px
+        margin: auto
+        margin-bottom: 40px
+    &s
+        background-color: $bg-secondary
+        &-block
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+@media (max-width: 991px)
+    .step
+        flex-basis: 33%
+        &:before
+            display: none
+@media (max-width: 768px)
+    .step
+        width: 100%
+@media (max-width: 500px)
+    .step
+        padding: 0 40px
+        max-width: 180px
+        &s
+            &-block
+                justify-content: space-around
+@media (max-width: 401px)
+    .steps
+        &-block
+            padding: 0
+            flex-direction: column
+            align-items: center
+            
