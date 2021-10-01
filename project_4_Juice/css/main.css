@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1440px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-weight: 500;
+}
+
+main {
+    background-color: #ccdef0;
+    background-image: radial-gradient(circle 675px at center, #ffffff 0%, #ccdef0 100%);
+    position: relative;
+
+}
+
+.header {
+    max-width: 1140px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.arrow-back {
+    position: absolute;
+    top: 23px;
+    left: 12px;
+    width: 30px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+    color: #000000;
+}
+
+.logo span {
+    color: #5abb33;
+}
+
+.nav_item {
+}
+.nav_link {
+    text-decoration: none;
+    color:#000;
+    padding-right: 20px;
+}
+
+.nav_link:last-child {
+    padding-right: 0;
+}
+
+.nav_link:hover {
+    color: #5abb33;
+}
+.content {
+    width: 800px;
+    display: inline-block;
+    margin: 80px 0 40% 45px;
+}
+.header_title {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 50px 0 35px ;
+}
+.header_text {
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: 500;
+    margin-bottom: 35px;
+    max-width: 610px;
+}
+.header_btn {
+    display: inline-block;
+    height: 65px;
+    padding: 0 35px;
+    border-radius: 60px;
+
+    background-color: #fadb60;
+    background-image: linear-gradient(to top, #ffcc00 0%, #fadb60 100%);
+
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 65px;
+}
+.header_btn:hover {
+    transform: translateX(20px);
+}
+.header-photo {
+    position: absolute;
+    top: 30%;
+    right: 10px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #232323;
+}
+.header_social {
+    
+}
+
+.header_social-item {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.header_social-item:last-child {
+    margin-right: 0;
+}
+
+.header_social-item:hover {
+    color: #5abb33;
+}
