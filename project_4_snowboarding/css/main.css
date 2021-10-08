@@ -113,3 +113,28 @@ header {
   background-color: #fff;
   color: #000;
 }
+
+.company {
+  background-image: url(/Portfolio/project_4_snowboarding/img/company-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.company-content {
+  padding-top: 250px;
+  max-width: 630px;
+  padding-bottom: 215px;
+}
+
+.company__title {
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+.company__text {
+  font-size: 15px;
+  line-height: 30px;
+  padding-bottom: 29px;
+}
