@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Proxima Nova";
+  color: #fff;
+}
+header {
+  background-color: #000;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-left: 27px;
+  margin-right: 525px;
+}
+.nav-item {
+  margin: 0 15px;
+}
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+}
+.control {
+  display: flex;
+  align-items: center;
+}
+.control-item {
+  margin-left: 30px;
+  list-style: none;
+  padding-left: 0;
+}
+.control-btn {
+  background-color: transparent;
+  display: block;
+  border: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.control-btn_search {
+  background-image: url(/Portfolio/project_4_snowboarding/img/header/search.svg);
+  width: 18px;
+  height: 18px;
+}
+.control-btn_account {
+  background-image: url(/Portfolio/project_4_snowboarding/img/header/account.png);
+  width: 16px;
+  height: 18px;
+}
+.hero {
+  background-image: url(/Portfolio/project_4_snowboarding/img/header/hero-bg1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-color: #fff;
+  position: relative;
+}
+.arrow-back {
+  position: absolute;
+  top: 23px;
+  left: 50px;
+  width: 30px;
+}
+.hero-content {
+  padding-top: 210px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.hero__title {
+  font-size: 80px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.hero__btn {
+  background-color: #000;
+  font-weight: 800;
+  border: none;
+  color: #fff;
+  padding: 19px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  float: right;
+  margin-right: 100px;
+  transition: 0.2s ease background-color;
+}
+
+.hero__btn:hover {
+  background-color: #fff;
+  color: #000;
+}

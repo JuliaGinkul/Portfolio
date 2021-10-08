@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/Mark Simonson - Proxima Nova Condensed Extrabold.eot');
+	src: local('☺'), url('../fonts/Mark Simonson - Proxima Nova Condensed Extrabold.woff') format('woff'), url('../fonts/Mark Simonson - Proxima Nova Condensed Extrabold.ttf') format('truetype'), url('../fonts/Mark Simonson - Proxima Nova Condensed Extrabold.svg') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/proximanova-semibold.eot');
+	src: local('☺'), url('../fonts/proximanova-semibold.woff') format('woff'), url('../fonts/proximanova-semibold.ttf') format('truetype'), url('../fonts/proximanova-semibold.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/proximanovacond-regular.eot');
+	src: local('☺'), url('../fonts/proximanovacond-regular.woff') format('woff'), url('../fonts/proximanovacond-regular.ttf') format('truetype'), url('../fonts/proximanovacond-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
