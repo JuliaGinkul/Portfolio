@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $('.slider').slick({
+        arrows:true,
+        speed:1000,
+        centerMode:true,
+        centerPadding:'1px',
+        slidesToShow:3,
+    });
+});

@@ -36,7 +36,27 @@ header {
 }
 .nav-item {
   margin: 0 15px;
+  opacity: 0.8;
 }
+
+.nav-item:after {
+  content: "";
+  opacity: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 5px;
+  border-radius: 50px; 
+}
+.nav-item:hover:after {
+  opacity: 1;
+}
+
+.nav-item:hover {
+  opacity: 1;
+}
+
 .nav-link {
   text-decoration: none;
   color: #fff;
@@ -60,19 +80,17 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s;
 }
-.control-btn_search {
-  background-image: url(/Portfolio/project_4_snowboarding/img/header/search.svg);
-  width: 18px;
-  height: 18px;
+
+.control-btn:hover {
+  color: #6CB5BC;
 }
-.control-btn_account {
-  background-image: url(/Portfolio/project_4_snowboarding/img/header/account.png);
-  width: 16px;
-  height: 18px;
-}
+
 .hero {
-  background-image: url(/Portfolio/project_4_snowboarding/img/header/hero-bg1.jpg);
+  background-image: url(../img/header/hero-bg1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -81,6 +99,8 @@ header {
   position: relative;
 
 }
+
+
 .arrow-back {
   position: absolute;
   top: 23px;
@@ -120,9 +140,10 @@ header {
   padding-top: 155px;
   color:#000;
   display: flex;
-  align-items: center;
+  text-align: center;
   text-transform: uppercase;
   margin: 0 auto;
+  padding-bottom: 210px;
 }
 .snowboards__title {
   font-size: 48px;
@@ -130,16 +151,63 @@ header {
   padding-bottom: 35px;
 }
 .snowboards__text {
+  display: inline-block;
   padding-bottom: 180px;
-  text-align: center;
 }
+
+/*slider*/
+
 .slider {
+  position: relative;
+  /*padding: 0px 60px;*/
 }
+
+.slider__item {
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  opacity: 0.4;
+}
+
+.slider__item.slick-center {
+  opacity: 1;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 125px;
+  height: 230px;
+  border: none;
+  margin: -115px 0 0 0;
+  cursor: pointer;
+}
+
+.slick-arrow.slick-prev{
+  left: -140px;
+  background: url(/project_4_snowboarding/img/slider/prev.png) 0 0 / 100% no-repeat;
+}
+
+.slick-arrow.slick-next{
+  right: -140px;
+  background: url(/project_4_snowboarding/img/slider/next.png) 0 0 / 100% no-repeat;
+}
+
+/*slider*/
+
 .snowboards__subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 60px;
 }
 
 .company {
-  background-image: url(/Portfolio/project_4_snowboarding/img/company-bg.png);
+  background-image: url(../img/company-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -263,7 +331,11 @@ footer {
   text-decoration: none;
   color: #fff;
   margin: 0 10px;
-  /*transition: all 0.3s;*/
+  transition: all 0.3s;
+}
+
+.footer__icon:hover {
+  color: #6CB5BC;
 }
 
 .footer__icon:first-child {
@@ -273,9 +345,6 @@ footer {
 .footer__icon:last-child {
   margin-right: 0;
 }
-
-
-
 
 .footer_additional {
   display: flex;
@@ -288,5 +357,11 @@ footer {
   font-weight: 600;
 }
 .footer_region {
+  position: relative;
   margin-left: 10px;
+}
+
+.footer_region img {
+  position: absolute;
+  left: -20px;
 }
