@@ -8,6 +8,7 @@ body {
   font-family: "Proxima Nova";
   color: #fff;
 }
+
 header {
   background-color: #000;
 }
@@ -78,6 +79,7 @@ header {
   height: 100vh;
   background-color: #fff;
   position: relative;
+
 }
 .arrow-back {
   position: absolute;
@@ -114,12 +116,33 @@ header {
   color: #000;
 }
 
+.snowboards {
+  padding-top: 155px;
+  color:#000;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.snowboards__title {
+  font-size: 48px;
+  font-weight: 800;
+  padding-bottom: 35px;
+}
+.snowboards__text {
+  padding-bottom: 180px;
+  text-align: center;
+}
+.slider {
+}
+.snowboards__subtitle {
+}
+
 .company {
   background-image: url(/Portfolio/project_4_snowboarding/img/company-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 .company-content {
   padding-top: 250px;
@@ -137,4 +160,133 @@ header {
   font-size: 15px;
   line-height: 30px;
   padding-bottom: 29px;
+}
+
+
+.features {
+  padding-top: 125px;
+  padding-bottom: 140px;
+}
+
+.features__h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 153px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.features-cards_wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: center;
+}
+.features-card {
+  max-width: 220px;
+}
+.features__link {
+  display: block;
+  text-decoration: none;
+}
+.features__img {
+  margin-bottom: 20px;
+}
+.features__title {
+  font-size: 16px;
+  line-height: 2;
+  color: #000;
+}
+
+footer {
+  background-color:#000;
+  padding-top: 70px;
+}
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 70px;
+  margin: 0 auto;
+}
+.footer-menu {
+  max-width: 200px;
+}
+.footer__title {
+  font-size: 17px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.footer-list {
+  list-style: none;
+}
+.footer-list__item {
+  padding-bottom: 15px;
+}
+.footer-list__link {
+  color: #c9c9c9;
+  text-decoration: none;
+}
+
+.footer_email {
+  position: relative;
+}
+.footer__input {
+  color: #6c6c6c;
+  margin-bottom: 57px;
+  border: none;
+  font-size: 14px;
+  padding: 14px 60px 15px 15px;
+  outline: none;
+}
+
+.footer__button {
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: #c7c7c7;
+  border: none;
+  position: absolute;
+  top: -14px;
+  right: 0;
+  cursor: pointer;
+  padding: 14px 18px;
+}
+
+.footer-icons-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__icon {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+  /*transition: all 0.3s;*/
+}
+
+.footer__icon:first-child {
+  margin-left: 0;
+}
+
+.footer__icon:last-child {
+  margin-right: 0;
+}
+
+
+
+
+.footer_additional {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+}
+.footer_copyright {
+  font-size: 14px;
+  font-weight: 600;
+}
+.footer_region {
+  margin-left: 10px;
 }
