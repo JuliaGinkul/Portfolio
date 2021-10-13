@@ -190,12 +190,12 @@ header {
 
 .slick-arrow.slick-prev{
   left: -140px;
-  background: url(/project_4_snowboarding/img/slider/prev.png) 0 0 / 100% no-repeat;
+  background: url(../img/slider/prev.png) 0 0 / 100% no-repeat;
 }
 
 .slick-arrow.slick-next{
   right: -140px;
-  background: url(/project_4_snowboarding/img/slider/next.png) 0 0 / 100% no-repeat;
+  background: url(../img/slider/next.png) 0 0 / 100% no-repeat;
 }
 
 /*slider*/
@@ -309,7 +309,7 @@ footer {
 }
 
 .footer__button {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 800;
   text-transform: uppercase;
   background-color: #c7c7c7;
@@ -318,7 +318,7 @@ footer {
   top: -14px;
   right: 0;
   cursor: pointer;
-  padding: 14px 18px;
+  padding: 15px 18px;
 }
 
 .footer-icons-row {
