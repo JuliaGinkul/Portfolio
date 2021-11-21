@@ -12,11 +12,12 @@
 </head>
 
 <body>
-   
+  
     <header class="header" id="header">
-            <div class="header_nav">
+            <div id="nav" class="header_nav">
                 <nav class="header_menu">
                     <a href="#portfolio" class="header_link">Портфолио</a>
+                    <a href="#skills" class="header_link">Навыки</a>
                     <a href="#contacts" class="header_link">Контакты</a>
                 </nav>
             </div>
@@ -30,48 +31,108 @@
     <main>
         <section class="portfolio" id="portfolio">
             <div class="container">
-                <h2 class="portfolio-header">Портфолио</h2>
-                    <div class="portfolio-cards_wrapper">
-
-                        <div class="card">
-                            <a href="project_1_FartukPro" class="card-link">
-                                <img class="card_img" src="./img/portfolio/fabric.png" alt="fabric">
-                                <h3 class="card_title">Фабрика фартукПро</h3>
-                                <p>Адаптивная верстка одностраничного сайта.</p>
-                            </a>
-                        </div>
-
-                        <div class="card">
-                            <a href="project_2_KinoMix/index.html" class="card-link">
-                                <img class="card_img" src="./img/portfolio/kinomix.png" alt="kinomix">
-                                <h3 class="card_title">КиноМикс</h3>
-                                <p>Адаптивная верстка многостраничного сайта.</p>
-                            </a>
-                        </div>
-
-                        <div class="card">
-                            <a href="project_3_Smoothie/index.html" class="card-link">
-                                <img class="card_img" src="./img/portfolio/smoothie.png" alt="smoothie">
-                                <h3 class="card_title">Смузи</h3>
-                                <p>Адаптивная верстка одностраничного сайта.</p>
-                            </a>
-                        </div>
-
-                        <div class="card">
-                            <a href="project_4_snowboarding/index.html" class="card-link">
-                                <img class="card_img" src="./img/portfolio/snowboarding.png" alt="snowboarding">
-                                <h3 class="card_title">Сноубординг</h3>
-                                <p> Верстка одностраничного сайта.</p>
-                            </a>
-                        </div>
-                        
+                <h2 class="main-header">Портфолио</h2>
+                <div class="portfolio-slider">
+                    <div class="card-slide">
+                        <a href="project_1_FartukPro" class="card-link"> 
+                            <img class="card_img" src="./img/portfolio/fabric.png" alt="fabric">
+                            <div class="overlay"></div>
+                            <h3 class="card_title">Фабрика фартукПро</h3>
+                            <p class="card_text">Адаптивная верстка одностраничного сайта.</p>
+                        </a>
                     </div>
+
+                    <div class="card-slide">
+                        <a href="project_2_KinoMix/index.html" class="card-link">
+                            <img class="card_img" src="./img/portfolio/kinomix.png" alt="kinomix">
+                            <div class="overlay"></div>
+                            <h3 class="card_title">КиноМикс</h3>
+                            <p class="card_text">Адаптивная верстка многостраничного сайта.</p>
+                        </a>
+                    </div>
+
+                    <div class="card-slide">
+                        <a href="project_3_Smoothie/index.html" class="card-link">
+                            <img class="card_img" src="./img/portfolio/smoothie.png" alt="smoothie">
+                            <div class="overlay"></div>
+                            <h3 class="card_title">Смузи</h3>
+                            <p class="card_text">Адаптивная верстка одностраничного сайта.</p>
+                        </a>
+                    </div>
+
+                    <div class="card-slide">
+                        <a href="project_4_snowboarding/index.html" class="card-link">
+                            <img class="card_img" src="./img/portfolio/snowboarding.png" alt="snowboarding">
+                            <div class="overlay"></div>
+                            <h3 class="card_title">Сноубординг</h3>
+                            <p class="card_text"> Верстка одностраничного сайта.</p>
+                        </a>
+                    </div>     
                 </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2 class="main-header">Навыки</h2>
+                    <div class="skills-wrapper">
+                        <div class="skill-item">
+                            <svg class="icon">
+                                <use href="sprite.svg#html"></use>
+                            </svg>
+                        </div>
+                        <div class="skill-item">
+                            <svg class="icon">
+                                <use href="sprite.svg#css"></use>
+                            </svg>
+                        </div>
+                        <div class="skill-item">
+                            <svg class="icon">
+                                <use href="sprite.svg#js"></use>
+                            </svg>
+                        </div>
+                        <div class="skill-item">
+                            <svg class="icon">
+                                <use href="sprite.svg#sass"></use>
+                            </svg>
+                        </div>
+                        <div class="skill-item">
+                            <svg class="icon">
+                                <use href="sprite.svg#jquery"></use>
+                            </svg>
+                        </div>
+                        <div class="skill-item">
+                            <svg class="icon">
+                                <use href="sprite.svg#gulp"></use>
+                            </svg>
+                        </div>
+                        <div class="skill-item">
+                            <svg class="icon">
+                                <use href="sprite.svg#pug"></use>
+                            </svg>
+                        </div>
+                        <div class="skill-item">
+                            <svg class="icon">
+                                <use href="sprite.svg#photoshop"></use>
+                            </svg>
+                        </div>
+                        <div class="skill-item">
+                            <svg class="icon">
+                                <use href="sprite.svg#figma"></use>
+                            </svg>
+                        </div>
+                        <div class="skill-item">
+                            <svg class="icon">
+                                <use href="sprite.svg#avocode"></use>
+                            </svg>
+                        </div>
+                    </div>
+            </div>
             <div class="bg-footer">
                 <img src="./img/footer/1bg.svg" alt="bg">
             </div>
-    </section>
-</main>
+        </section>
+        
+    </main>
 
     <footer class="footer" id="contacts">
         <div class="container">
@@ -88,11 +149,14 @@
                     <p>Мои профили в социальных сетях:</p>
                     <div class="footer-icons-row">
                         <a class="footer_icon" href="https://www.instagram.com/julia_ginkul/">
-                            <i class="fab fa-instagram"></i>     
+                            <svg class="icon_footer">
+                                <use href="sprite.svg#instagram"></use>
+                            </svg>   
                         </a>
-
                         <a class="footer_icon" href="https://vk.com/id125911905">
-                            <i class="fab fa-vk"></i>                               
+                            <svg class="icon_footer">
+                                <use href="sprite.svg#vk"></use>
+                            </svg>                             
                         </a>
                     </div>
                 </div>
@@ -104,8 +168,9 @@
             </div>
         </div>
 
-    <script src="https://kit.fontawesome.com/056b538e3e.js" crossorigin="anonymous"></script>
     <script src="./libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./libs/slick.min.js"></script>
+    <script src="./libs/gsap.min.js"></script>
 
     <script src="./js/main.js"></script>
 
