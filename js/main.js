@@ -15,6 +15,20 @@ $(document).ready(function(){
         slidesToShow:3,
         autoplay:true,
         autoplaySpeed:2000,
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 570,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 });
 

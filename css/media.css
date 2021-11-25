@@ -7,6 +7,9 @@
         padding-top: 40px;
         padding-bottom: 60px;
     }
+    .bg-footer {
+        bottom: -43px;
+    }
 /* 
     .back-to-top {
         bottom: 88%;
@@ -79,6 +82,10 @@
 
     .card p {
         flex-shrink: 14px;
+    }
+
+    .bg-footer {
+        bottom: -18px;
     }
 
     .footer-copyright_name {

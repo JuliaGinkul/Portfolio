@@ -73,7 +73,6 @@ a {
 
 .header_link {
   font-size: 15px;
-  padding: 0 10px 5px;
   text-decoration: none;
   color: #fff;
   font-family: "Open Sans", sans-serif;
@@ -256,15 +255,17 @@ a {
 
 .skills-wrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   opacity: 0.7;
   margin-top: 100px;
+  padding: 10px;
 }
 
 .bg-footer {
   position: absolute;
-  bottom: -70px;
+  bottom: -60px;
   left: -1px;
 }
 
@@ -273,7 +274,7 @@ a {
   background-color: #273336;
   color: #ffffff;
   padding-bottom: 60px;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .back-to-top {
