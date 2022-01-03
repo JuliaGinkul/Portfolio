@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Averta';
+    src:url('../fonts/AvertaRegular.woff2') format('woff2'),
+        url('../fonts/AvertaRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta';
+    src:url('../fonts/AvertaExtraboldItalic.woff2') format('woff2'),
+        url('../fonts/AvertaExtraboldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
