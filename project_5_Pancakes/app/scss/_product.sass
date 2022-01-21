@@ -1,0 +1,238 @@
+.product
+    &-card
+        padding-top: 66px 
+        &__inner 
+            display: flex
+            max-height: 878px
+            min-width: 0
+        &__content
+            margin-left: 36px
+        &__title 
+            font-weight: 600
+            font-size: 18px
+            line-height: 24px
+            padding: 25px 0 7px
+        &__reviews
+            padding-top: 23px
+            display: flex
+            align-items: center
+            cursor: pointer
+        &__rating
+            padding-left: 11px
+            position: relative
+            &::after
+                content: ""
+                display: block
+                width: 16px
+                height: 16px
+                background-image: url(/img/arrow.svg)
+                background-repeat: no-repeat
+                background-size: contain
+                position: absolute
+                left: 210%
+                bottom: -3px
+        &__price-new 
+            font-weight: 700
+            font-size: 24px
+            padding: 46px 0 12px
+            display: block
+            cursor: pointer
+        &__price-old 
+            position: relative
+            color: #828282
+            margin-left: 19px
+            font-weight: 400
+            text-decoration: line-through
+            font-size: 14px
+            vertical-align: 3px
+            &::after 
+                content: ""
+                display: block
+                width: 16px
+                height: 16px
+                background-image: url(/img/arrow.svg)
+                background-repeat: no-repeat
+                background-size: contain
+                position: absolute
+                top: 10%
+                left: 65px
+        &__sale 
+            font-size: 12px
+            border: 1px solid #333333
+            padding: 3px 10px
+            margin-right: 4px
+            &:last-child 
+                margin-right: 0
+        &__select 
+            padding: 12px 172px 13px 15px
+            letter-spacing: 1px
+            position: relative
+            display: block
+            border: 1px solid #333333
+            font-size: 14px
+            color: #333333
+            margin: 38px 0
+            cursor: pointer
+            overflow: hidden
+            background: url('/img/arrow-size.svg') no-repeat right
+        &__add
+            padding-top: 11.5px
+            font-size: 14px
+            width: 83%
+        &__like
+            transition: all 0.3s
+            stroke: #fff
+            fill: #333333
+            width: 15%
+            &:hover
+                fill: #fff
+            &-svg
+                width: 15px
+                height: 15px
+        &__btn 
+            background-color: #333333
+            border: 1px solid #333333
+            color: #fff
+            cursor: pointer
+            transition: all 0.3s ease
+            &:hover
+                background-color: #5e3b27
+                border: #5e3b27
+                color: #fff
+        &__buy
+            display: block
+            padding-top: 12px
+            &:hover
+                color: #5e3b27
+        &__list
+            padding-top: 24px
+            list-style: none
+            position: relative
+            margin-top: 34px
+            &::after
+                display: block
+                width: 168%
+                content: ''
+                position: absolute
+                border-top: 0.5px solid #c4c4c4
+                top: 0
+                left: -20px
+        &__item 
+            padding-bottom: 15px
+            text-decoration: underline
+            align-items: center
+            display: flex
+        &__link
+            &:hover
+                color: #5e3b27
+select 
+    appearance: none
+    position: relative
+
+form 
+    width: 145px
+    background-color: #F2F2F2
+    display: block
+
+.value
+    &-button
+        display: inline-block
+        width: 48.3px
+        height: 44px
+        text-align: center
+        vertical-align: middle
+        padding: 13px 22px
+        user-select: none
+        &:hover 
+            cursor: pointer
+#number 
+    text-align: center
+    border: none
+    background-color: #f2f2f2
+    width: 40px
+ 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button 
+      -webkit-appearance: none
+      margin: 0
+
+.bottom
+    &-content 
+        display: flex
+        justify-content: center
+        padding-top: 32px
+        &:hover
+            color: #5e3b27
+
+@-webkit-keyframes popup
+    0% 
+        transform: scale(0)
+    100%  
+        transform: scale(1)
+
+@keyframes popup
+    0% 
+        transform: scale(0)
+    100% 
+        transform: scale(1)
+
+
+@media (max-width: 1388px)
+    .product
+        &-card 
+            &__add
+                margin-top: 17px
+            &__buy
+                padding-top: 20px
+            &__list
+                margin-top: 31px
+                &::after
+                    width: 100%
+    form
+        display: block
+
+
+@media (max-width: 1070px)
+    .product
+        &-card 
+            &__content
+                margin-left: 15px
+            &__select
+                margin-right: 10px
+            &__add
+                width: 60%
+            &__list
+                &::after
+                    left: 0
+
+@media (max-width: 670px)
+    .product
+        &-card 
+            &__inner
+                flex-direction: column
+                max-height: none
+            &__content
+                margin-left: 15%
+            &__list
+                &::after
+                    left: -20px
+
+@media (max-width: 400px)
+    .product
+        &-card 
+            &__content
+                margin-left: 20px
+            &__price-new 
+                padding: 49px 0 12px
+            &__add
+                margin-top: 16px
+            &__list
+                margin-top: 35px
+            &__item
+                padding-bottom: 12px
+                &::after
+                    left: -20px
+                    width: 105%
+    .bottom
+        &-content 
+            padding-top: 48px

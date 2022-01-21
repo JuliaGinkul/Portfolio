@@ -1,0 +1,49 @@
+.mainSlider
+    height: 878px
+    width: 686px
+    li
+        position: relative
+        height: 100%
+    img
+        position: absolute
+        display: inline-block
+        width: 100%
+        height: 878px
+        left: 0
+        top: 0
+        object-fit: cover
+        object-position: center center
+.vertical
+    padding:0!important
+
+.lSGallery
+    left: 22px
+    z-index: 1
+    li
+        position: relative
+        display: flex
+        align-items: center
+        overflow: visible
+        margin-top: 7px
+        &:hover
+            border-radius: none
+    img
+        transition: all 0.8s
+
+
+@media (max-width: 880px)
+    .lightSlider
+        width: 100%
+    .vertical
+        width: 60%
+
+
+
+@media (max-width: 670px)
+    .mainSlider
+        height: 480px
+        width: auto
+        img
+            height: 480px
+    .vertical
+        width: 100%

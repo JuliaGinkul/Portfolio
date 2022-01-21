@@ -1,0 +1,112 @@
+.gallery
+    padding-bottom: 142px
+    &__items
+        display: grid
+        gap: 16px
+        grid-template-columns: repeat(auto-fit, minmax(335px, 1fr))
+        grid-template-rows: 57% 57%
+        padding-top: 32px
+    &__item 
+        display: flex
+        text-align: center
+        position: relative
+        padding: 0px 0px 85% 0px
+        &_big
+            grid-column: span 2
+            grid-row: span 2
+        &:hover .overlay__gallery
+            display: block
+            background: rgba(51, 51, 51, 0.7)
+        &:hover .gallery-cart
+            opacity: 1
+        &:hover .card_title
+            opacity: 1
+        &:hover .gallery-like
+            opacity: 1
+        &:hover .likes
+            opacity: 1
+    &-cart
+        width: 32px
+        position: absolute
+        left: 46%
+        top: 45%
+        opacity: 0
+        transition: opacity 1s ease
+    &-like
+        width: 16px
+        position: absolute
+        right: 126%
+        bottom: -3px
+        opacity: 0
+        transition: opacity 1s ease
+.card
+    &_img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.overlay
+    &__gallery
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        transition: background 0.8s ease
+.likes
+    position: absolute
+    left: 50%
+    top: 89%
+    color: #fff
+    z-index: 1
+    opacity: 0
+    transition: opacity 1s ease
+
+
+@media (max-width: 1388px)
+    .gallery
+        &__item
+            &_big
+                grid-column: span 1
+
+@media (max-width: 1070px)
+    .gallery
+        &__items
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr))
+
+
+@media (max-width: 880px)
+    .gallery
+        padding-bottom: 0
+        &__items
+            gap: 7px
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 50% 25% 25% 25%
+        &__item
+            &_big
+                grid-row: span 1
+                grid-column: span 2
+
+
+@media (max-width: 670px)
+    .gallery
+        &-cart
+            top: 35%
+        &-like
+            bottom: 1px
+    .likes
+        top: 84%
+
+@media (max-width: 400px)
+    .gallery
+        padding-bottom: 42px
+        &__items
+            padding-top: 58px
+            grid-template-columns: repeat(auto-fit, minmax(183px, 1fr))
+            grid-template-rows: 37% 20% 28.2% 28.6%
+        &__item
+            &_big
+                grid-row: span 2

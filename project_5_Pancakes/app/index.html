@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pancakes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="container_header cont">
+                <div class="header__logo">LoGo</div>
+                <div class="header__icons">
+                    <a href="#" class="header__link">
+                        <svg class="header__link-svg">
+                            <use href="./img/sprite.svg#account"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header__link">
+                        <svg class="header__link-svg">
+                            <use href="./img/sprite.svg#like"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header__link">
+                        <svg class="header__link-svg">
+                            <use href="./img/sprite.svg#cart"></use>
+                        </svg>
+                    </a>
+                    <div class="burger_menu">
+                        <div class="burger">
+                            <span></span>
+                        </div>
+                        <nav class="burger_nav">
+                            <ul class="main">
+                                <li class="burger_list"><a href="#" class="cool_link_white">Каталог</a></li>
+                                <li class="burger_list"><a href="#" class="cool_link_white active">Акции</a></li>
+                                <li class="burger_list"><a href="#" class="cool_link_white">Начинки</a></li>
+                                <li class="burger_list"><a href="#" class="cool_link_white">Выход</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-card">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="product-card__inner">
+                    <ul id="lightSlider" class="mainSlider">
+                        <li data-thumb="./img/slider/photo1.jpg">
+                            <img src="./img/slider/photo1.jpg" alt="Slide 01" />
+                        </li>
+                        <li data-thumb="./img/slider/photo2.jpg">
+                            <img src="./img/slider/photo2.jpg" alt="Slide 02" />
+                        </li>
+                        <li data-thumb="./img/slider/photo3.jpg">
+                            <img src="./img/slider/photo3.jpg" alt="Slide 03" />
+                        </li>
+                        <li data-thumb="./img/slider/photo4.jpg">
+                            <img src="./img/slider/photo4.jpg" alt="Slide 04" />
+                        </li>
+                        <li data-thumb="./img/slider/photo5.jpg">
+                            <img src="./img/slider/photo5.jpg" alt="Slide 05" />
+                        </li>
+                    </ul>
+
+                    <div class="product-card__content">
+                        <h2 class="product-card__title">Капкейки</h2>
+                        <a class="product-card__reviews">Отзывы
+                            <span class="product-card__rating" href="#">
+                                <div class="rate-yo"></div>
+                            </span>35 отзывов</a>
+                        <a class="product-card__price-new">600 ₽/шт<span class="product-card__price-old">800 ₽/шт</span></a>
+                        <span class="product-card__sale">скидка -20%</span>
+                        <span class="product-card__sale">акция -20%</span>
+                        <select class="product-card__select" name="select" value="none">
+                            <option value="none">Выбрать начинку</option>
+                            <option value="1">Шоколадная</option>
+                            <option value="2">Ванильная</option>
+                            <option value="3">Тирамису</option>
+                            <option value="4">Солёная карамель</option>
+                        </select>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0"/>
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </form>
+                        <button class="product-card__add product-card__btn">Добавить в корзину</button>
+                        <button class="product-card__like product-card__btn">
+                            <svg class="product-card__like-svg">
+                                <use href="./img/sprite.svg#like"></use>
+                            </svg>
+                        </button>
+                        <a href="#" class="product-card__buy">Купить в 1 клик</a>
+                        <ul class="product-card__list">
+                            <li class="product-card__item"><a class="product-card__link" href="#">Описание товара</a></li>
+                            <li class="product-card__item"><a class="product-card__link" href="#">Доставка и возврат</a></li>
+                            <li class="product-card__item"><a class="product-card__link" href="#">Способы оплаты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="bottom-content" href="#">Посмотреть все товары</a>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery__items">
+                    <div href="#" class="gallery__item gallery__item_big">
+                        <img class="card_img" src="img/img1.jpg" alt="Image 1"/>
+                        <div class="overlay__gallery"></div>
+                        <a href="#"><img class="gallery-cart" src="./img/gallery-cart.png" alt="cart"/></a>
+                        <a href="#"><p class="likes"><img class="gallery-like" src="./img/gallery-like.svg" alt="like"/>200</p></a>    
+                    </div>
+
+                    <div href="#" class="gallery__item">
+                        <img class="card_img" src="img/img2.jpg" alt="Image 2"/>
+                        <div class="overlay__gallery"></div>
+                        <a href="#"><img class="gallery-cart" src="./img/gallery-cart.png" alt="cart"/></a>
+                        <a href="#"><p class="likes"><img class="gallery-like" src="./img/gallery-like.svg" alt="like"/>200</p></a>    
+                    </div>
+
+                    <div href="#" class="gallery__item">
+                        <img class="card_img" src="img/img3.jpg" alt="Image 3" />
+                        <div class="overlay__gallery"></div>
+                        <a href="#"><img class="gallery-cart" src="./img/gallery-cart.png" alt="cart"/></a>
+                        <a href="#"><p class="likes"><img class="gallery-like" src="./img/gallery-like.svg" alt="like"/>200</p></a>    
+                    </div>
+
+                    <div href="#" class="gallery__item">
+                        <img class="card_img" src="img/img4.jpg" alt="Image 4" />
+                        <div class="overlay__gallery"></div>
+                        <a href="#"><img class="gallery-cart" src="./img/gallery-cart.png" alt="cart"/></a>
+                        <a href="#"><p class="likes"><img class="gallery-like" src="./img/gallery-like.svg" alt="like"/>200</p></a>    
+                    </div>
+
+                    <div href="#" class="gallery__item">
+                        <img class="card_img" src="img/img5.jpg" alt="Image 5" />
+                        <div class="overlay__gallery"></div>
+                        <a href="#"><img class="gallery-cart" src="./img/gallery-cart.png" alt="cart"/></a>
+                        <a href="#"><p class="likes"><img class="gallery-like" src="./img/gallery-like.svg" alt="like"/>200</p></a>    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container cont">
+            <div class="footer__row">
+                <div class="footer__item">
+                    <h4 class="footer__title">Покупателям</h4>
+                    <ul class="footer-list">
+                        <li class="footer-list__item"><a class="footer-list__link" href="#">Каталог</a></li>
+                        <li class="footer-list__item"><a class="footer-list__link" href="#">Акции</a></li>
+                        <li class="footer-list__item"><a class="footer-list__link" href="#">Начинки</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__item">
+                    <h4 class="footer__title">О нас</h4>
+                    <ul class="footer-list">
+                        <li class="footer-list__item"><a class="footer-list__link" href="#">О компании</a></li>
+                        <li class="footer-list__item"><a class="footer-list__link" href="#">Новости</a></li>
+                        <li class="footer-list__item"><a class="footer-list__link" href="#">Команда</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__item">
+                    <h4 class="footer__title">Узнайте первыми о новинках и акциях</h4>
+                    <div class="form">
+                        <input id="mail" class="footer-email" type="email" placeholder="Адрес электронной почты"/>
+                        <input class="footer-button" type="submit" value="Подписаться"/>
+                        <img id="close" class="footer-icon" src="./img/close.png" alt="close"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/lightslider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+.footer
+    padding-top: 104px
+    &__row 
+        display: flex
+        justify-content: space-around
+        padding-bottom: 70px
+    &__item
+        font-size: 16px
+        color: #333333
+        &:nth-child(2) 
+            margin-right: 26px
+        &:last-child 
+            margin-right: 6%
+    &__title
+        text-transform: uppercase
+    &-list
+        list-style: none
+        margin-top: 22px
+        &__item
+            margin-bottom: 8px
+            position: relative
+        &__link
+            text-decoration: none
+            &::before
+                content: ''
+                position: absolute
+                bottom: 0
+                right: 0
+                width: 0
+                height: 2px
+                background-color: #5a5353
+                transition: 0.3s
+            &:hover::before
+                width: 100%
+                left: 0
+    &-email
+        border: none
+        border-bottom: 1px solid #C4C4C4
+        padding-bottom: 11px
+        padding-left: 15px
+        font-size: 14px
+        width: 123%
+        margin: 51px 0px 34px
+        letter-spacing: 0.64px
+        outline: none
+    &-button
+        padding: 8px 24px
+        border: 1px solid #333333
+        text-decoration: none
+        color: #333333
+        background-color: #fff
+        transition: all 0.6s ease
+        float: right
+        margin-right: -22%
+        &:hover
+            background-color: #5e3b27
+            color: #fff
+    &-icon
+        position: absolute
+        right: -20%
+        top: 51px
+        cursor: pointer
+.form
+    position: relative
+
+
+
+
+
+
+
+button
+    cursor: pointer
+    padding: 10px
+    border: none
+    width: 80px
+
+
+
+@media (max-width: 1070px)
+    .footer
+        &__item
+            &:nth-child(2)
+                margin-right: 0
+            &:last-child 
+                margin-right: 0
+        &-email
+            width: 100%
+            margin: 35px 0 25px
+        &-button
+            margin-right: 0
+        &-icon
+            right: 11px
+            top: 38px
+            
+
+
+
+@media (max-width: 880px)
+    .footer
+        &__item
+            &:first-child
+                padding-right: 0
+            &:last-child 
+                padding-top: 0
+
+
+@media (max-width: 670px)
+    .footer
+        &__row 
+            flex-wrap: wrap
+            justify-content: space-evenly
+        &__item
+            &:first-child
+                padding-right: 47px
+            &:last-child 
+                padding-top: 56px
+                line-height: 1.3
+        &__title
+            max-width: 60%
+
+
+@media (max-width: 400px)
+    .footer
+        padding-top: 113px
+        &__row 
+            padding-bottom: 186px
+            justify-content: normal
+        &__title
+            max-width: 60%
+
+        
